@@ -1,8 +1,3 @@
-import express from 'express';
-import cors from 'cors';
+import { startCron } from "./jobs/report.job.js";
 
-const app = express()
-app.use(cors())
-
-
-export default app;
+startCron();
